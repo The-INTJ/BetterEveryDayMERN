@@ -30,7 +30,7 @@ const MainPage = (props) => {
                         <p>1 x 1.01^365 = 37!</p>
                     </div>
 
-                    <span className="neon-divide"></span>
+                    <span id="first-divider" className="neon-divide"></span>
 
                     <div className="some-padding" id="the-tracker">
                         <div id="diamond-svg">
@@ -41,7 +41,7 @@ const MainPage = (props) => {
                         </p>
                     </div>
 
-                    <span className="neon-divide"></span>
+                    <span id="second-divider" className="neon-divide"></span>
 
                     <div className="some-padding" id="the-fax">
                         <div id="fax-svg">

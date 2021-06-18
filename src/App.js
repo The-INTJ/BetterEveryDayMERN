@@ -121,7 +121,6 @@ class App extends Component {
 
           {this.state.mainContent}
         </div>
-        <Footer />
       </div>
     );
   }
