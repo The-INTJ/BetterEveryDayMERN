@@ -1,0 +1,138 @@
+/*
+IMPORTANT
+
+Color Scheme:
+Color Scheme:
+The two main colors -- they cannot touch anywhere, or be in close proximity without a transition color (or whitespace)
+(main) Neon Orange: #ff4f00
+(complement) Purple: #801FCC
+(Clash Compliment) blue: #006FFF
+
+The two secondary colors, or transition colors. 
+(transitional) blueish: #004DB3
+(transitional) orange ish: #FFAF19
+
+The highlight color, text hover color, third transition, and paragraph color if black is not in use
+(transitional) brown: #BF7D00
+
+
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 0 0;
+    background-color: #E8E8E8; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+li {
+    cursor: pointer;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #801FCC;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 0 3px 5px gray;
+}
+
+#nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav-bar ul li {
+    float: left;
+}
+
+#nav-bar ul li:hover {
+    color: #ff4f00;
+}
+
+#nav-bar ul ul {
+    display: none;
+    position: absolute;
+    /* box-shadow: -2px 2px 4px grey, 2px -2px 4px grey; */
+}
+
+#nav-bar ul ul li {
+    float: none;
+    padding: 0 15px;
+    visibility: visible;
+}
+
+#nav-bar ul li:hover > ul {
+    display: block;
+    color:white;
+}
+/* Add hover to reveal an additional div with larger border*/
+/* This keeps the sub lists displaying */
+#nav-bar ul ul li:hover, ul ul li {
+    display: block;
+    color:white;
+}
+
+.border {
+    margin-top: 5px;
+    background-image: url("../svg/orange-trap-neon-reverse-tall.svg");
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 120px 25px;
+}
+
+.border:hover {
+    background-image: none;
+    margin-top: 5px;
+    background-image: url("../svg/orange-trap-neon-tall.svg");
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 120px 25px;
+    transform: translate(5px, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.border-long {
+    padding-left: 10px;
+    margin-top: 5px;
+    background-image: url("../svg/orange-trap-neon-longtall-reverse.svg");
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 145px 30px;
+    width: 145px;
+}
+
+.border-long:hover {
+    padding-left: 10px;
+    background-image: none;
+    margin-top: 5px;
+    background-image: url("../svg/orange-trap-neon-longtall.svg");
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 145px 30px;
+    width: 145px;
+    transform: translate(5px, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+#home {
+    color:#ff4f00; 
+}

@@ -1,0 +1,117 @@
+#centering-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cont-1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    width: 90%;
+    justify-content: center;
+}
+
+#title-cont {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+#title-cont h1 {
+    color: #ff4f00;
+}
+
+#divide-span {
+    border-right: 1px solid #801FCC;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#explore-cont-outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#explore-cont-inner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    color: #801FCC;
+}
+
+#explore-cont-inner h4 {
+    text-decoration: underline;
+}
+
+/* ------ */
+
+#example-cont-overall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#separator-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#separator-contt span {
+    border-top: 1px solid #801FCC;
+    height: 0px;
+    width: 35vw;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#separator-cont h2 {
+    color: #ff4f00;
+}
+
+#the-suggestions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#suggestions-achievements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: -10px;
+    flex-basis: -moz-avaiuulable;
+}
+
+#suggestion-divider {
+    height: 30vh;
+    border-right: 1px solid #801FCC;
+    position: absolute;
+    right: 50%;
+}
+
+#suggestions-habits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: -10px;
+    flex-basis: -moz-available;
+}
+
+#space-footer {
+    height: 50px;
+}
+
+.clickable {
+    cursor: pointer;
+}

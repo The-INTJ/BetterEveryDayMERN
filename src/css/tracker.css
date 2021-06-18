@@ -1,0 +1,164 @@
+#percent-better-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -5px;
+}
+
+#percent-better-cont h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    color: #ff4f00;
+}
+
+#percent-better-cont p {
+    color: black;
+}
+
+#percent-better-cont span {
+    border-top: 1px solid silver;
+    width: 20%;
+}
+
+#flex-cont {
+    display: flex;
+    justify-content: center;
+}
+
+#advance-the-day {
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+#advance-the-day h4 {
+    font-size: 1.5em;
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+}
+
+#advance-the-day:hover {
+    transform: scale(1.3, 1.3);
+    transition: all 0.5s ease-in-out;
+}
+
+/* ----- */
+
+#tracker-boxes-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#new-achievements-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0 20px 20px 20px;
+    min-width: 350px;
+    background-color: white;
+}
+
+#new-achievements-cont h2 {
+    font-size: 2em;
+}
+
+.separator {
+    width: calc(100% + 36px);
+    border-top: 1px solid #801FCC;
+    height: 0px;
+}
+
+.plus {
+    color: #801FCC;
+    font-size: 3em;
+    font-weight: bolder;
+    margin-top: -14px;
+    margin-bottom: -10px;
+
+    transition: all 0.5s;
+}
+
+.plus:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.complete-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+.complete-bar p {
+    color: black;
+}
+
+.complete-bar span {
+    border-top: 1px solid black;
+    height: 0px;
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ---- */
+
+#excellent-habits-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0 20px 20px 20px;
+    min-width: 350px;
+    background-color: white;
+}
+
+#excellent-habits-cont h2 {
+    font-size: 2em;
+}
+
+
+/* ----- ALL JS CLASSES ----- */
+
+.clickable {
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: #801FCC;
+}
+
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 25px;
+    padding: 0;
+}
+
+/* Each of the items in the list */
+.custom-menu li {
+    border-radius: 25px;
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
