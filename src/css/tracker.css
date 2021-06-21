@@ -162,3 +162,14 @@
 .custom-menu li:hover {
     background-color: #DEF;
 }
+
+@media (max-width: 900px) {
+    #tracker-boxes-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #new-achievements-cont {
+        margin-bottom: 5%;
+    }
+}
