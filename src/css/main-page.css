@@ -97,6 +97,14 @@ a {
     align-items: center;
 }
 
+#the-tracker h2 {
+    cursor: pointer;
+}
+
+#the-tracker h2:hover {
+    color: white;
+}
+
 #diamond-svg {
     background-image: url("../svg/orange-neon-diamond.svg");
     background-position: 50% 50%;

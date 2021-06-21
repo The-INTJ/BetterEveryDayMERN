@@ -34,7 +34,7 @@ const MainPage = (props) => {
 
                     <div className="some-padding" id="the-tracker">
                         <div id="diamond-svg">
-                            <h2><a href="tracker.php">The Tracker</a></h2>
+                            <h2 onClick={props.trackerClicked}>The Tracker</h2>
                         </div>
                         <p>Our Tracker allows you to do this! You can mark habits you want to keep, or small goals you want to do that day, and check them off.
                             Better yet, you then get to see a constant score of how much better you've become!

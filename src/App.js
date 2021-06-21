@@ -16,13 +16,52 @@ class App extends Component {
   state = {
     isLoggedIn: false,
     name: "",
-    mainContent: <MainPage />
+    itemsArray:
+    [
+      [
+        <ImprovementItem
+          id={1}
+          divState="achieve"
+          //circleState="unchecked"
+          itemName="Goal"
+        />
+      ],
+      [
+        <ImprovementItem
+          id={2}
+          divState="achieved"
+          //circleState="unchecked"
+          itemName="Goaled"
+        />
+      ],
+      [
+        <ImprovementItem
+          id={3}
+          divState="achieve-habit"
+          //circleState="unchecked"
+          itemName="Habit"
+        />
+      ],
+      [
+        <ImprovementItem
+          id={4}
+          divState="achieved-habit"
+          //circleState="unchecked"
+          itemName="Habited"
+        />
+      ]
+    ],
+    mainContent: 
+      <MainPage
+      trackerClicked={() => this.trackerClicked(this.state.itemsArray)}
+      />
   }
 
-  homeClicked = () => {
+  homeClicked = (values) => {
     console.log("home clicked");
     this.setState({
-      mainContent: <MainPage />
+      mainContent: <MainPage 
+      trackerClicked={() => this.trackerClicked(values)}/>
     })
   }
 
@@ -30,9 +69,9 @@ class App extends Component {
     console.log("tracker clicked");
     this.setState({
       mainContent: <Tracker
-        uncheckedGoals={values[1]}
-        checkedGoals={values[2]}
-        uncheckedHabits={values[0]}
+        uncheckedGoals={values[0]}
+        checkedGoals={values[1]}
+        uncheckedHabits={values[2]}
         checkedHabits={values[3]}
         percent={12.5}
       />
@@ -65,45 +104,6 @@ class App extends Component {
 
   render() {
 
-    // Testing data
-    let UG = [
-      <ImprovementItem
-        id={1}
-        divState="achieve"
-        //circleState="unchecked"
-        itemName="Goal"
-      />
-    ]
-
-    let CG = [
-      <ImprovementItem
-        id={2}
-        divState="achieved"
-        //circleState="unchecked"
-        itemName="Goaled"
-      />
-    ]
-
-    let UH = [
-      <ImprovementItem
-        id={3}
-        divState="achieve-habit"
-        //circleState="unchecked"
-        itemName="Habit"
-      />
-    ]
-
-    let CH = [
-      <ImprovementItem
-        id={4}
-        divState="achieved-habit"
-        //circleState="unchecked"
-        itemName="Habited"
-      />
-    ]
-
-    let allItems = [UH, UG, CG, CH];
-
     return (
       <div>
         <div id="view-height-max">
@@ -111,8 +111,8 @@ class App extends Component {
             name={this.state.name}
             isLoggedIn={this.state.isLoggedIn}
             loginClicked={() => this.loginClicked()}
-            trackerClicked={() => this.trackerClicked(allItems)}
-            homeClicked={() => this.homeClicked()}
+            trackerClicked={() => this.trackerClicked(this.state.itemsArray)}
+            homeClicked={() => this.homeClicked(this.state.itemsArray)}
             specHomeClicked={() => this.specificsClicked(0)}
             specHouseClicked={() => this.specificsClicked(1)}
             specLifeClicked={() => this.specificsClicked(2)}
