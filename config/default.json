@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://dt:admin@bed-connector.67a0q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongoURI": "mongodb://dt:admin@bed-connector-shard-00-00.67a0q.mongodb.net:27017,bed-connector-shard-00-01.67a0q.mongodb.net:27017,bed-connector-shard-00-02.67a0q.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-117jq2-shard-0&authSource=admin&retryWrites=true&w=majority",
     "jwtSecret": "rumplestiltskin"
-}
+} 
